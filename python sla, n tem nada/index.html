@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Exercício Gabriel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+    <header id="topo">
+        <h1>Site Exercício Gabriel</h1>
+        <nav aria-label="Navegação principal">
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#agenda">Agenda</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>Este é meu primeiro site em HTML para praticar a estrutura de uma página. Aqui vou brincar com textos, listas, tabelas e formulários.</p>
+        </section>
+
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <ul>
+                <li>Hangaragem</li>
+                <li>Manutenção programada</li>
+                <li>Comercial &amp; Orçamentos</li>
+                <li>Atendimento ao cliente</li>
+            </ul>
+
+            <ol>
+                <li>Receber a solicitação</li>
+                <li>Conferir disponibilidade</li>
+                <li>Enviar proposta</li>
+                <li>Executar o serviço</li>
+            </ol>
+        </section>
+
+       <!-- Seção: Agenda (tabela) -->
+    <section id="agenda">
+      <h2>Agenda de Aeronaves</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Aeronave</th>
+            <th>Entrada</th>
+            <th>Saída</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>PS-ECE</td>
+            <td>15/08/2025</td>
+            <td>27/08/2025</td>
+            <td>Programada</td>
+          </tr>
+          <tr>
+            <td>PP-FCF</td>
+            <td>05/08/2025</td>
+            <td>31/08/2025</td>
+            <td>Programada</td>
+          </tr>
+          <tr>
+            <td>PR-MSZ</td>
+            <td>09/08/2025</td>
+            <td>29/08/2025</td>
+            <td>Programada</td>
+          </tr>
+          <tr>
+            <td>PP-EMO</td>
+            <td>15/08/2025</td>
+            <td>29/08/2025</td>
+            <td>Programada</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <div id="mensagemSucesso" class="mensagem-sucesso">
+                Mensagem enviada com sucesso! Entraremos em contato em breve.
+            </div>
+            
+            <form id="formularioContato">
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" placeholder="voce@exemplo.com" required>
+
+                <label for="data">Data preferida</label>
+                <input id="data" name="data" type="date">
+
+                <fieldset>
+                    <legend>Assunto</legend>
+                    <label><input type="radio" name="assunto" value="orcamento" required> Orçamento</label>
+                    <label><input type="radio" name="assunto" value="duvida"> Dúvida</label>
+                    <label><input type="radio" name="assunto" value="outro"> Outro</label>
+                </fieldset>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+
+                <div class="botoes-form">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </div>
+            </form>
+        </section>
+
+        <a href="#topo" class="voltar-topo">↑ Voltar ao topo</a>
+    </main>
+
+    <footer>
+        <small>&copy; 2025 Biel. Página de treino HTML.</small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
